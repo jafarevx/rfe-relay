@@ -1,0 +1,29 @@
+{
+  "name": "remote-file-explorer-relay",
+  "version": "1.0.0",
+  "description": "High-performance WebSocket & HTTP Relay Server for Remote File Explorer (Render / Railway / Self-Hosted)",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "remote-file-explorer",
+    "webrtc",
+    "signaling",
+    "websocket",
+    "relay",
+    "render"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "ws": "^8.17.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

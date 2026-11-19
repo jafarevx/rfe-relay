@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: remote-file-explorer-relay
+    runtime: node
+    plan: free
+    region: oregon
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: ADMIN_MASTER_KEY
+        value: ADMIN_MASTER_SECRET_KEY_9981
+      - key: KEEP_ALIVE_URL
+        sync: false
